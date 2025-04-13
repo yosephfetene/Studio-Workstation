@@ -4,7 +4,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", gono2);
 }
 
-function gono2(){
+function gono2(event){
     var buttoninnerhtml = this.innerHTML;
     switch (buttoninnerhtml){
         case "w": 
