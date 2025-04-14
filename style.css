@@ -3,32 +3,48 @@ body {
     background-image:url(./pexels-mikebirdy-114820.jpg);
   }
 
+  img{
+    border-radius: 9px;
+    background-color: #CD7F32;
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 6px;
+  }
+
   #text-holder-hold{
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 3px;
   }
 
   #text-holder{
     background-image: url(./pexels-fwstudio-33348-172276.jpg);
-    width: 475px;
-    height: 65px;
+    width: 455px;
+    height: 58px;
     border-radius:10px;
   }
 
   h1 {
+    width: 450px;
     font-size: 3rem;
     margin: 0;
-
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
     padding: 0;
-    background: linear-gradient(#ca8452, rgb(172, 124, 28)), url(./pexels-fwstudio-33348-172276.jpg);
+    background: linear-gradient(#ca8452, rgb(255, 178, 23)), url(./pexels-fwstudio-33348-172276.jpg);
     background-clip: text;
     color: transparent;
     display: inline-block;
-    border: ridge thick darkkhaki;
+    border: ridge thick #F0E68C;
     border-radius: 10px;
-    font-family: "Arvo", cursive;
     position: relative;
-    top: 1px;
+    right: 1px;
+    top: 0px;
   }
   
   footer {
@@ -41,11 +57,12 @@ body {
   .set {
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 22px;
     margin: 10px auto;
     display: flex;
     gap: 5px;
     flex-direction: column;
+    justify-content: space-between;
   }
   
   .game-over {
@@ -69,24 +86,17 @@ body {
     line-height: normal;
     font-weight: 900;
     color: #dcf02e;
-    border: ridge thick darkkhaki;
+    border: ridge thick #F0E68C;
     border-radius: 10px;
     display: inline-block;
     text-align: center;
     margin: 0;
-    background-color: transparent;
+    background-color: #CD7F32;
     cursor: pointer;
-    transition: background-color 0.2s ease-out;
+    transition: transform 0.2s, background-color 0.1s ease-in-out;
   }
 
   .instrument:hover{
-    background-color: #ca8452;
-  }
-
-  .instrument:active{
-    background-color: #ca8452 !important; 
-  }
-  .instrument:focus {
-    background-color: #ca8452 !important;
+    transform: scale(1.05) rotate(2deg);
   }
   
