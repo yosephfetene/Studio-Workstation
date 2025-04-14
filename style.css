@@ -1,25 +1,51 @@
 body {
     text-align: center;
-    background-color: #283149;
+    background-image:url(./pexels-mikebirdy-114820.jpg);
   }
-  
+
+  #text-holder-hold{
+    display: flex;
+    justify-content: center;
+  }
+
+  #text-holder{
+    background-image: url(./pexels-fwstudio-33348-172276.jpg);
+    width: 475px;
+    height: 65px;
+    border-radius:10px;
+  }
+
   h1 {
-    font-size: 5rem;
-    color: #DBEDF3;
+    font-size: 3rem;
+    margin: 0;
+
+    padding: 0;
+    background: linear-gradient(#ca8452, rgb(172, 124, 28)), url(./pexels-fwstudio-33348-172276.jpg);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border: ridge thick darkkhaki;
+    border-radius: 10px;
     font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;
-  
+    position: relative;
+    top: 1px;
   }
   
   footer {
     color: #DBEDF3;
     font-family: sans-serif;
   }
-  
- 
-  
+  #set-holder{
+    display: flex;
+  }
   .set {
-    margin: 10% auto;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: 10px auto;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
   }
   
   .game-over {
@@ -36,20 +62,31 @@ body {
     color: red;
   }
   
-  .drum {
+  .instrument {
     outline: none;
-    border: 10px solid #404B69;
-    font-size: 5rem;
+    font-size: 40px;
     font-family: 'Arvo', cursive;
-    line-height: 2;
+    line-height: normal;
     font-weight: 900;
-    color: #DA0463;
-    text-shadow: 3px 0 #DBEDF3;
-    border-radius: 15px;
+    color: #dcf02e;
+    border: ridge thick darkkhaki;
+    border-radius: 10px;
     display: inline-block;
-    width: 150px;
-    height: 150px;
     text-align: center;
-    margin: 10px;
-    background-color: white;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
   }
+
+  .instrument:hover{
+    background-color: #ca8452;
+  }
+
+  .instrument:active{
+    background-color: #ca8452 !important; 
+  }
+  .instrument:focus {
+    background-color: #ca8452 !important;
+  }
+  
