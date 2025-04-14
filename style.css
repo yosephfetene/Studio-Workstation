@@ -12,6 +12,7 @@ body {
     padding: 0;
     position: relative;
     left: 6px;
+    border: ridge thick #444742;
   }
 
   #text-holder-hold{
@@ -57,7 +58,7 @@ body {
   .set {
     text-align: center;
     position: relative;
-    top: 22px;
+    top: 15px;
     margin: 10px auto;
     display: flex;
     gap: 5px;
