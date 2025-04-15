@@ -1,10 +1,10 @@
 var numberOfDrumButtons = document.querySelectorAll(".instrument").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
-    document.querySelectorAll(".instrument")[i].addEventListener("click", gono2);
+    document.querySelectorAll(".instrument")[i].addEventListener("click", gono1);
 }
 
-function gono2(event){
+function gono1(event){
     var buttoninnerhtml = this.innerHTML;
     switch (buttoninnerhtml){
         case "W":
