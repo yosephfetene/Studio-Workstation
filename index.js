@@ -117,7 +117,7 @@ function gono1(event){
             sound25.play();
             break;
         case "/":
-            let sound26 = new Audio(".3CHORDS/Sequence 06.mp3");
+            let sound26 = new Audio("./3CHORDS/Sequence 333.wav");
             sound26.play();
             break;
         case "Y":
@@ -263,8 +263,7 @@ function gono(event) {
             sound25.play();
             break;
         case "/":
-        case "?":
-            let sound26 = new Audio(".3CHORDS/Sequence 06.mp3");
+            let sound26 = new Audio("./3CHORDS/Sequence 333.wav");
             sound26.play();
             break;
         case "Y":
