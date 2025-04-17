@@ -1,9 +1,14 @@
+// This is a simple drum kit application that plays different sounds when buttons are clicked or keys are pressed.
+// The sounds are categorized into two groups: drum sounds and chord sounds.
+// The drum sounds are played when the corresponding buttons or keys (W, A, S, D, J, K, L) are pressed.
 var numberOfDrumButtons = document.querySelectorAll(".instrument").length;
-
+// The number of buttons with the class "instrument" is stored in the variable numberOfDrumButtons.
+// The buttons are selected using querySelectorAll and the length property is used to get the count.
 for (var i = 0; i < numberOfDrumButtons; i++) {
     document.querySelectorAll(".instrument")[i].addEventListener("click", gono1);
 }
-
+// The for loop iterates through each button and adds an event listener to it.
+// The event listener listens for a click event and calls the gono1 function when the button is clicked.
 function gono1(event){
     var buttoninnerhtml = this.innerHTML;
     switch (buttoninnerhtml){
@@ -91,11 +96,39 @@ function gono1(event){
             let sound20 = new Audio("./2CHORDS/guitar-strum-ab-major7_G#_major.wav");
             sound20.play();
             break;
+        case "Q": 
+            let sound21 = new Audio("./3CHORDS/Sequence 01_2.mp3");
+            sound21.play();
+            break;
+        case "R":
+            let sound22 = new Audio("./3CHORDS/Sequence 02.mp3");
+            sound22.play();
+            break;
+        case "E":
+            let sound23 = new Audio("./3CHORDS/Sequence 03.mp3");
+            sound23.play();
+            break;
+        case ";":
+            let sound24 = new Audio("./3CHORDS/Sequence 04.mp3");
+            sound24.play();
+            break;
+        case "Z":
+            let sound25 = new Audio("./3CHORDS/Sequence 05.mp3");
+            sound25.play();
+            break;
+        case "/":
+            let sound26 = new Audio(".3CHORDS/Sequence 06.mp3");
+            sound26.play();
+            break;
+        case "Y":
+            let sound27 = new Audio("./3CHORDS/Sequence 07.mp3");
+            sound27.play();
+            break;
     }
 }
 
 document.addEventListener('keypress', gono);
-
+// The addEventListener method is used to listen for the 'keypress' event on the document object.
 function gono(event) {
     let key = event.key;
     switch (key) {
@@ -204,5 +237,41 @@ function gono(event) {
                 let sound20 = new Audio("./2CHORDS/guitar-strum-ab-major7_G#_major.wav");
                 sound20.play();
                 break;
+        case "Q": 
+        case "q":
+            let sound21 = new Audio("./3CHORDS/Sequence 01_2.mp3");
+            sound21.play();
+            break;
+        case "R":
+        case "r":
+            let sound22 = new Audio("./3CHORDS/Sequence 02.mp3");
+            sound22.play();
+            break;
+        case "E":
+        case "e":
+            let sound23 = new Audio("./3CHORDS/Sequence 03.mp3");
+            sound23.play();
+            break;
+        case ";":
+        case ":":
+            let sound24 = new Audio("./3CHORDS/Sequence 04.mp3");
+            sound24.play();
+            break;
+        case "Z":
+        case "z":
+            let sound25 = new Audio("./3CHORDS/Sequence 05.mp3");
+            sound25.play();
+            break;
+        case "/":
+        case "?":
+            let sound26 = new Audio(".3CHORDS/Sequence 06.mp3");
+            sound26.play();
+            break;
+        case "Y":
+        case "y":
+            let sound27 = new Audio("./3CHORDS/Sequence 07.mp3");
+            sound27.play();
+            break;
+    
     }
 }

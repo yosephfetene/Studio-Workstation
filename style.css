@@ -37,9 +37,8 @@ body {
     font-weight: 400;
     font-style: normal;
     padding: 0;
-    background: linear-gradient(#ca8452, rgb(255, 178, 23)), url(./pexels-fwstudio-33348-172276.jpg);
-    background-clip: text;
-    color: transparent;
+    color: #DBEDF3;
+    text-shadow: 0 3px 4px #444742;
     display: inline-block;
     border: ridge thick #F0E68C;
     border-radius: 10px;
@@ -99,5 +98,34 @@ body {
 
   .instrument:hover{
     transform: scale(1.05) rotate(2deg);
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      background-image: url(./pexels-mikebirdy-114820.jpg);
+      background-size: cover;
+    }
+    h1 {
+      font-size: 1.5rem;
+      width: 220px;
+    }
+    .instrument {
+      font-size: 30px;
+    }
+    #text-holder{
+      background-image: none;
+      background-color: #CD7F32;
+      height: 32px;
+      width: 227px;
+      position: relative;
+      left: 45px;
+    }
+    #text-holder-hold{
+      width: 250px;
+    }
+    img{
+      width: 35px;
+      height: 35px;
+    }   
   }
   
