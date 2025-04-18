@@ -8,7 +8,7 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
     document.querySelectorAll(".instrument")[i].addEventListener("click", gono1);
 }
 // The for loop iterates through each button and adds an event listener to it.
-// The event listener listens for a click event and calls the gono1 function when the button is clicked.
+// The event listener litens for a click event and calls the gono1 function when the button is clicked.
 function gono1(event){
     var buttoninnerhtml = this.innerHTML;
     switch (buttoninnerhtml){
