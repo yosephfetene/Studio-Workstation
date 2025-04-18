@@ -89,11 +89,11 @@ function gono1(event){
             sound18.play();
             break;
         case "C":
-            let sound19 = new Audio(".2CHORDS/G_major.wav");
+            let sound19 = new Audio("./2CHORDS/G_major.wav");
             sound19.play();
             break;
         case "V":
-            let sound20 = new Audio("./2CHORDS/guitar-strum-ab-major7_G#_major.wav");
+            let sound20 = new Audio("./2CHORDS/major7_G_major.wav");
             sound20.play();
             break;
         case "Q": 
@@ -229,12 +229,12 @@ function gono(event) {
                 break;
         case "C":
         case "c":
-                let sound19 = new Audio(".2CHORDS/G_major.wav");
+                let sound19 = new Audio("./2CHORDS/G_major.wav");
                 sound19.play();
                 break;
         case "V":
         case "v":
-                let sound20 = new Audio("./2CHORDS/guitar-strum-ab-major7_G#_major.wav");
+                let sound20 = new Audio("./2CHORDS/major7_G_major.wav");
                 sound20.play();
                 break;
         case "Q": 
